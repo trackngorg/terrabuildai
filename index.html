@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TerraBuild AI</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Bricolage+Grotesque:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">
+    <div class="logo-mark">T</div>
+    TerraBuild AI
+  </div>
+  <div class="nav-right">
+    <div class="nav-badge">Early Access</div>
+    <button class="nav-cta" onclick="document.getElementById('nameInput').focus()">Join Waitlist</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-eyebrow">
+    <span class="eyebrow-dot"></span>
+    Launching Soon
+  </div>
+  <h1>Your business,<br><em>automated</em> by AI</h1>
+  <p class="hero-sub">TerraBuild AI connects your tools, eliminates repetitive tasks, and builds intelligent workflows — so your team can focus on what actually matters.</p>
+
+  <div class="waitlist">
+    <div id="formContent">
+      <div class="wl-title">Join the Waitlist</div>
+      <div class="wl-sub">Be first when we launch. No spam, ever.</div>
+      <input class="wl-input" type="text" id="nameInput" placeholder="Your full name" />
+      <input class="wl-input" type="email" id="emailInput" placeholder="Your email address" />
+      <button class="wl-btn" onclick="joinWaitlist()">Reserve My Spot →</button>
+      <div class="wl-proof">
+        <div class="avs">
+          <div class="av av1">A</div>
+          <div class="av av2">K</div>
+          <div class="av av3">M</div>
+          <div class="av av4">T</div>
+        </div>
+        <span id="countDisplay">1,240 people already waiting</span>
+      </div>
+    </div>
+    <div class="success" id="successMsg">
+      <div class="success-icon">🌱</div>
+      <h3>You're on the list!</h3>
+      <p>Welcome to TerraBuild AI. We'll reach out as soon as early access is ready for you.</p>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stat"><div class="stat-n">10x</div><div class="stat-l">Faster workflows</div></div>
+  <div class="stat"><div class="stat-n">80%</div><div class="stat-l">Time saved</div></div>
+  <div class="stat"><div class="stat-n">100+</div><div class="stat-l">Integrations</div></div>
+  <div class="stat"><div class="stat-n">0</div><div class="stat-l">Code needed</div></div>
+</div>
+
+<!-- LOGOS MARQUEE -->
+<div class="logos-row">
+  <div class="logos-track">
+    <div class="logo-chip"><span class="lc-dot"></span>Email Automation</div>
+    <div class="logo-chip"><span class="lc-dot"></span>CRM Sync</div>
+    <div class="logo-chip"><span class="lc-dot"></span>Invoice Generation</div>
+    <div class="logo-chip"><span class="lc-dot"></span>Lead Qualification</div>
+    <div class="logo-chip"><span class="lc-dot"></span>WhatsApp Bots</div>
+    <div class="logo-chip"><span class="lc-dot"></span>Document Processing</div>
+    <div class="logo-chip"><span class="lc-dot"></span>Report Scheduling</div>
+    <div class="logo-chip"><span class="lc-dot"></span>Payment Automation</div>
+    <div class="logo-chip"><span class="lc-dot"></span>Data Extraction</div>
+    <div class="logo-chip"><span class="lc-dot"></span>Slack Alerts</div>
+    <div class="logo-chip"><span class="lc-dot"></span>Email Automation</div>
+    <div class="logo-chip"><span class="lc-dot"></span>CRM Sync</div>
+    <div class="logo-chip"><span class="lc-dot"></span>Invoice Generation</div>
+    <div class="logo-chip"><span class="lc-dot"></span>Lead Qualification</div>
+    <div class="logo-chip"><span class="lc-dot"></span>WhatsApp Bots</div>
+    <div class="logo-chip"><span class="lc-dot"></span>Document Processing</div>
+    <div class="logo-chip"><span class="lc-dot"></span>Report Scheduling</div>
+    <div class="logo-chip"><span class="lc-dot"></span>Payment Automation</div>
+    <div class="logo-chip"><span class="lc-dot"></span>Data Extraction</div>
+    <div class="logo-chip"><span class="lc-dot"></span>Slack Alerts</div>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<section class="features">
+  <div class="section-tag">What we do</div>
+  <div class="section-h">Intelligence in every workflow</div>
+  <div class="section-p">Automation that actually works for your business — not against it.</div>
+  <div class="grid">
+    <div class="card">
+      <div class="card-icon">🔗</div>
+      <h3>Connect Everything</h3>
+      <p>Link Gmail, Notion, Slack, Salesforce and 100+ tools without writing a single line of code.</p>
+      <span class="card-tag">No-code</span>
+    </div>
+    <div class="card">
+      <div class="card-icon">🧠</div>
+      <h3>AI-Powered Logic</h3>
+      <p>Terra reads context, makes decisions, and acts on your behalf — handling edge cases automatically.</p>
+      <span class="card-tag">Autonomous</span>
+    </div>
+    <div class="card">
+      <div class="card-icon">⚡</div>
+      <h3>Plain English Workflows</h3>
+      <p>Just describe what you want. Terra builds the automation and runs it continuously in the background.</p>
+      <span class="card-tag">Natural Language</span>
+    </div>
+    <div class="card">
+      <div class="card-icon">📊</div>
+      <h3>Live Analytics</h3>
+      <p>See what your automations are doing, how much time they're saving, and where to improve.</p>
+      <span class="card-tag">Real-time</span>
+    </div>
+    <div class="card">
+      <div class="card-icon">🔒</div>
+      <h3>Enterprise Security</h3>
+      <p>End-to-end encryption, SOC 2 compliance, and granular access controls — built in from day one.</p>
+      <span class="card-tag">Secure</span>
+    </div>
+    <div class="card">
+      <div class="card-icon">🌍</div>
+      <h3>Built for Africa</h3>
+      <p>WhatsApp integrations, local payment rails, and multilingual support — designed for where you operate.</p>
+      <span class="card-tag">Local-first</span>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how">
+  <div class="section-tag" style="text-align:center">How it works</div>
+  <div class="section-h">Three steps to automation</div>
+  <div class="section-p" style="margin-bottom:48px">From signup to your first automated workflow in under 10 minutes.</div>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">01</div>
+      <h4>Connect your tools</h4>
+      <p>Link the apps your business already uses. No engineers needed — just click and authorize.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">02</div>
+      <h4>Describe your workflow</h4>
+      <p>Tell Terra what you want automated in plain English. It figures out the logic for you.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">03</div>
+      <h4>Watch it run</h4>
+      <p>Your automation goes live instantly. Monitor performance and refine anytime from your dashboard.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
+  <h2>Ready to automate?</h2>
+  <p>Join hundreds of businesses already on the waitlist. Early access spots are limited.</p>
+  <div class="cta-input-row">
+    <input class="cta-input" type="email" id="ctaEmail" placeholder="Enter your email" />
+    <button class="cta-go" onclick="joinCTA()">Get Early Access</button>
+  </div>
+  <p id="ctaMsg" style="margin-top:14px;font-size:0.8rem;color:rgba(255,255,255,0.7);display:none">✓ You're on the list!</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-logo">
+    <div class="ft-logo-mark">T</div>
+    TerraBuild AI
+  </div>
+  <p>© 2026 TerraBuild AI. All rights reserved.</p>
+  <div class="ft-links">
+    <a href="#">Privacy</a>
+    <a href="#">Terms</a>
+    <a href="#">Contact</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
